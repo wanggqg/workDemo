@@ -75,6 +75,7 @@ public class SelectPhotoActivity extends Activity {
 		if (!dir.exists()) {
 			dir.mkdirs();
 		}
+		
 		// uploadManager = new UploadManager(this, null);
 		dialog();
 	}
