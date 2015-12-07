@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#E2E2E2"
+    	android:orientation="vertical"
+    	android:paddingBottom="16dp">
+        
+        <TextView 
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:text="上传图片"
+    		android:gravity="center_horizontal"
+    		android:textColor="#FF000000"
+    		android:textSize="18sp"
+    		android:textStyle="bold"
+    		android:paddingTop="9dp"
+    		android:paddingBottom="6dp"/>
+        
+        <View android:layout_width="match_parent"
+    		android:layout_height="1dp"
+    		android:background="#CBCBCB"/>
+        
+        <Button 
+            android:id="@+id/btn_camera"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:text="拍照"
+    		android:textColor="#4E4E4E"
+    		android:textSize="18sp"
+    		android:textStyle="bold"
+    		android:paddingTop="9dp"
+    		android:paddingBottom="9dp"
+    		android:layout_marginLeft="16dp"
+    		android:layout_marginRight="16dp"
+    		android:layout_marginTop="7dp"
+    		android:background="@drawable/btn_pop_image"/>
+        
+        <Button 
+            android:id="@+id/btn_local"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:text="从相册中获取"
+    		android:textColor="#4E4E4E"
+    		android:textSize="18sp"
+    		android:textStyle="bold"
+    		android:paddingTop="9dp"
+    		android:paddingBottom="9dp"
+    		android:layout_marginLeft="16dp"
+    		android:layout_marginRight="16dp"
+    		android:layout_marginTop="7dp"
+    		android:background="@drawable/btn_pop_image"/>
+        
+        
+        <Button 
+            android:id="@+id/btn_cancle"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:text="取消"
+    		android:textColor="#4E4E4E"
+    		android:textSize="18sp"
+    		android:textStyle="bold"
+    		android:paddingTop="9dp"
+    		android:paddingBottom="9dp"
+    		android:layout_marginLeft="16dp"
+    		android:layout_marginRight="16dp"
+    		android:layout_marginTop="7dp"
+    		android:background="@drawable/btn_pop_image"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>
