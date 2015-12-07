@@ -1,0 +1,14 @@
+ADID = 0
+AppID = 135
+AppKey = 0
+GameID = 135
+GameKey = 0
+BtnLogoutShow=1
+showShareButton=3
+PlatformCode = twgp
+ServerListURL = http://zhzsl.playfun.com.tw/public/tw_serverlist.xml
+Update = http://113.208.129.53:14572/zhz/public/tw_update.xml
+FBURL = https://www.facebook.com/zhzplayfun
+GuanWangURL = http://zhz.playfun.com.tw/
+ActivityURL = http://appi.playfun.com.tw/union_zhz/activate.php
+productList=301#300#351#350#370#321#320#331#341#340#361#360#371

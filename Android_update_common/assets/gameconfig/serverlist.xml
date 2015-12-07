@@ -1,0 +1,8 @@
+<servers>
+<serverlist open="1" random_count="0" >
+<server gateway_id="4" label="兄妹情深" addr="203.195.242.207:24470" status="[ffff00]火爆[-]"  tag="1"/>
+</serverlist>
+<serverlist open="-1" random_count="0" >
+<server gateway_id="999" label="腾讯官方审核服" addr="203.195.242.207:11500" status="[ffff00]火爆[-]"  tag="1"/>
+</serverlist>
+</servers>

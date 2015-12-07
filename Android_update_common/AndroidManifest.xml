@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lk.zhenhuan"
+    android:installLocation="auto"
+    android:theme="@android:style/Theme.NoTitleBar"
+    android:versionCode="1"
+    android:versionName="1.2.4" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:hasCode="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/cm_app_name" >
+        <activity
+            android:name="com.cm.update.UnityPlayerNativeActivity"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            android:label="@string/cm_app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+        <activity
+            android:name="com.cm.update.UpdateActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/cm_title_activity_update"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+			android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- TalkingData申请的appid 和  渠道名称 -->
+        <meta-data
+            android:name="TD_APP_ID"
+            android:value="B011A58F648153D16EAAD7E6D9E668D3" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-feature android:glEsVersion="0x00020000" />
+
+</manifest>
